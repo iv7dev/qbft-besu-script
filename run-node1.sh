@@ -1,0 +1,2 @@
+# Do not forget to update bootnode url
+besu --data-path=src/node-1/data --genesis-file=src/genesis.json --rpc-http-enabled --rpc-http-api=ETH,NET,QBFT --host-allowlist="*" --rpc-http-cors-origins="all"

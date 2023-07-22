@@ -1,0 +1,21 @@
+### validators by block number
+POST http://localhost:8545/
+Content-Type: application/json
+
+{
+    "jsonrpc":"2.0",
+    "method":"qbft_getValidatorsByBlockNumber",
+    "params":["latest"], 
+    "id":1
+}
+
+### pending votes
+POST http://localhost:8545/
+Content-Type: application/json
+
+{
+    "jsonrpc":"2.0",
+    "method":"qbft_getPendingVotes",
+    "params":[], 
+    "id":1
+}
