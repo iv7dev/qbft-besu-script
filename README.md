@@ -14,12 +14,12 @@
   <p align="center">
     A private network provides a configurable network for testing
     <br />
-    <a href="https://github.com/ccr5/hyperledger-private-blockchain"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/ccr5/simple-hyperledger-besu"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ccr5/hyperledger-private-blockchain/issues">Report Bug</a>
+    <a href="https://github.com/ccr5/simple-hyperledger-besu/issues">Report Bug</a>
     ·
-    <a href="https://github.com/ccr5/hyperledger-private-blockchain/issues">Request Feature</a>
+    <a href="https://github.com/ccr5/simple-hyperledger-besu/issues">Request Feature</a>
   </p>
 </p>
 
@@ -84,7 +84,7 @@ To get a local copy up and running, follow these simple steps.
 
 1. Clone this repository
 ```shell
-git clone https://github.com/ccr5/hyperledger-private-blockchain.git
+git clone https://github.com/ccr5/simple-hyperledger-besu.git
 ```
 2. Install all dependencies.
 
@@ -125,22 +125,22 @@ docker-compose up -d
 
 Matheus Nobre Gomes - matt-gomes@live.com
 
-Project Link: [https://github.com/ccr5/hyperledger-private-blockchain](https://github.com/ccr5/hyperledger-private-blockchain)
+Project Link: [https://github.com/ccr5/simple-hyperledger-besu](https://github.com/ccr5/simple-hyperledger-besu)
 
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/ccr5/hyperledger-private-blockchain.svg?style=for-the-badge
-[contributors-url]: https://github.com/ccr5/hyperledger-private-blockchain/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/ccr5/hyperledger-private-blockchain.svg?style=for-the-badge
-[forks-url]: https://github.com/ccr5/hyperledger-private-blockchain/network/members
-[stars-shield]: https://img.shields.io/github/stars/ccr5/hyperledger-private-blockchain.svg?style=for-the-badge
-[stars-url]: https://github.com/ccr5/hyperledger-private-blockchain/stargazers
-[issues-shield]: https://img.shields.io/github/issues/ccr5/hyperledger-private-blockchain.svg?style=for-the-badge
-[issues-url]: https://github.com/ccr5/hyperledger-private-blockchain/issues
-[license-shield]: https://img.shields.io/github/license/ccr5/hyperledger-private-blockchain.svg?style=for-the-badge
-[license-url]: https://github.com/ccr5/hyperledger-private-blockchain/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/ccr5/simple-hyperledger-besu.svg?style=for-the-badge
+[contributors-url]: https://github.com/ccr5/simple-hyperledger-besu/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/ccr5/simple-hyperledger-besu.svg?style=for-the-badge
+[forks-url]: https://github.com/ccr5/simple-hyperledger-besu/network/members
+[stars-shield]: https://img.shields.io/github/stars/ccr5/simple-hyperledger-besu.svg?style=for-the-badge
+[stars-url]: https://github.com/ccr5/simple-hyperledger-besu/stargazers
+[issues-shield]: https://img.shields.io/github/issues/ccr5/simple-hyperledger-besu.svg?style=for-the-badge
+[issues-url]: https://github.com/ccr5/simple-hyperledger-besu/issues
+[license-shield]: https://img.shields.io/github/license/ccr5/simple-hyperledger-besu.svg?style=for-the-badge
+[license-url]: https://github.com/ccr5/simple-hyperledger-besu/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/mattnobre
 [product-screenshot]: img/logo.jpeg
