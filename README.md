@@ -90,7 +90,7 @@ git clone https://github.com/ccr5/hyperledger-private-blockchain.git
 
 3. Export besu binary
 ```shell
-export PATH=$PATH:~/path/to/your/bin
+export PATH=$PATH:~/path/to/your/besu/bin
 ```
 
 ## Usage
@@ -115,6 +115,10 @@ chmod 777 run-node1.sh && ./run-node1.sh
 
 ### docker
 
+1. run docker compose 
+```shell
+docker-compose up -d
+```
 
 <!-- CONTACT -->
 ## Contact
