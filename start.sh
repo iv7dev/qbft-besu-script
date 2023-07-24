@@ -42,5 +42,3 @@ do
 done
 
 rm -r networkFiles
-
-besu --data-path=node-1/data --genesis-file=genesis.json --rpc-http-enabled --rpc-http-api=ETH,NET,QBFT --host-allowlist="*" --rpc-http-cors-origins="all"

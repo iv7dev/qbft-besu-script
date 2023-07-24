@@ -1,0 +1,107 @@
+---
+version: '3.6'
+
+services:
+
+  node1:
+    image: hyperledger/besu:23.4.1
+    ports:
+      - "8545:8545"
+      - "30303:30303"
+    entrypoint:
+      - /bin/bash
+      - -c
+      - |
+
+        /opt/besu/bin/besu \
+        --genesis-file=config/genesis.json \
+        --data-path=config/node-1/data \
+        --rpc-http-enabled \
+        --rpc-http-api=ETH,NET,QBFT \
+        --host-allowlist="*" \
+        --rpc-http-cors-origins="all" ;
+    volumes:
+      - ./config:/opt/besu/config
+    networks:
+      my-hyperledger-network:
+        ipv4_address: 172.16.239.11
+
+  node2:
+    image: hyperledger/besu:23.4.1
+    ports:
+      - "8546:8545"
+      - "30304:30303"
+    entrypoint:
+      - /bin/bash
+      - -c
+      - |
+
+        /opt/besu/bin/besu \
+        --genesis-file=config/genesis.json \
+        --data-path=config/node-2/data \
+        --rpc-http-enabled \
+        --rpc-http-api=ETH,NET,QBFT \
+        --host-allowlist="*" \
+        --rpc-http-cors-origins="all" \
+        --bootnodes=enode://e7218c90ec250a73bac85ee42044a5e77c349cfe2722ed94442347b1414b1e8b0f9ab21288de91cb04bb43a90eace8d9072ad73e510da5f6eb7040612f9e8501@172.16.239.11:30303 ;
+    volumes:
+      - ./config:/opt/besu/config
+    networks:
+      my-hyperledger-network:
+        ipv4_address: 172.16.239.12
+
+  node3:
+    image: hyperledger/besu:23.4.1
+    ports:
+      - "8547:8545"
+      - "30305:30303"
+    entrypoint:
+      - /bin/bash
+      - -c
+      - |
+
+        /opt/besu/bin/besu \
+        --genesis-file=config/genesis.json \
+        --data-path=config/node-3/data \
+        --rpc-http-enabled \
+        --rpc-http-api=ETH,NET,QBFT \
+        --host-allowlist="*" \
+        --rpc-http-cors-origins="all" \
+        --bootnodes=enode://e7218c90ec250a73bac85ee42044a5e77c349cfe2722ed94442347b1414b1e8b0f9ab21288de91cb04bb43a90eace8d9072ad73e510da5f6eb7040612f9e8501@172.16.239.11:30303 ;
+    volumes:
+      - ./config:/opt/besu/config
+    networks:
+      my-hyperledger-network:
+        ipv4_address: 172.16.239.13
+
+  node4:
+    image: hyperledger/besu:23.4.1
+    ports:
+      - "8548:8545"
+      - "30306:30303"
+    entrypoint:
+      - /bin/bash
+      - -c
+      - |
+
+        /opt/besu/bin/besu \
+        --genesis-file=config/genesis.json \
+        --data-path=config/node-4/data \
+        --rpc-http-enabled \
+        --rpc-http-api=ETH,NET,QBFT \
+        --host-allowlist="*" \
+        --rpc-http-cors-origins="all" \
+        --bootnodes=enode://e7218c90ec250a73bac85ee42044a5e77c349cfe2722ed94442347b1414b1e8b0f9ab21288de91cb04bb43a90eace8d9072ad73e510da5f6eb7040612f9e8501@172.16.239.11:30303 ;
+    volumes:
+      - ./config:/opt/besu/config
+    networks:
+      my-hyperledger-network:
+        ipv4_address: 172.16.239.14
+
+networks:
+  my-hyperledger-network:
+    name: my-hyperledger-network
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.16.239.0/24

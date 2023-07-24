@@ -90,7 +90,7 @@ git clone https://github.com/ccr5/hyperledger-private-blockchain.git
 
 3. Export besu binary
 ```shell
-export PATH=$PATH:~/path/to/your/bin/besu
+export PATH=$PATH:~/path/to/your/bin
 ```
 
 ## Usage
