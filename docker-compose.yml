@@ -4,7 +4,7 @@ version: '3.6'
 services:
 
   node1:
-    image: hyperledger/besu:23.4.1
+    image: hyperledger/besu:23.7.2
     ports:
       - "8545:8545"
       - "30303:30303"
@@ -27,7 +27,7 @@ services:
         ipv4_address: 172.16.239.11
 
   node2:
-    image: hyperledger/besu:23.4.1
+    image: hyperledger/besu:23.7.2
     ports:
       - "8546:8545"
       - "30304:30303"
@@ -51,7 +51,7 @@ services:
         ipv4_address: 172.16.239.12
 
   node3:
-    image: hyperledger/besu:23.4.1
+    image: hyperledger/besu:23.7.2
     ports:
       - "8547:8545"
       - "30305:30303"
@@ -75,7 +75,7 @@ services:
         ipv4_address: 172.16.239.13
 
   node4:
-    image: hyperledger/besu:23.4.1
+    image: hyperledger/besu:23.7.2
     ports:
       - "8548:8545"
       - "30306:30303"
