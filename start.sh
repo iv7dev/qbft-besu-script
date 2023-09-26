@@ -25,6 +25,12 @@ mkdir node-4
 cd node-4
 mkdir data
 
+echo "Creating five folder"
+cd ../
+mkdir node-5
+cd node-5
+mkdir data
+
 cd ../
 
 echo "Creating keys"
